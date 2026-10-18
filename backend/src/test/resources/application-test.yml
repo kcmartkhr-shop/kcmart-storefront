@@ -1,0 +1,37 @@
+spring:
+  task:
+    scheduling:
+      enabled: false
+  datasource:
+    url: jdbc:postgresql://localhost:5433/kcmart_test
+    username: kcmart
+    password: ${KCMART_DB_PASSWORD}
+  flyway:
+    enabled: true
+  mail:
+    host: localhost
+    port: 2525
+    username: test-user
+    password: test-password
+    properties:
+      mail:
+        smtp:
+          auth: false
+          starttls:
+            enable: false
+
+kcmart:
+  reservation:
+    expiry:
+      enabled: false
+  admin:
+    username: test-admin
+    password: test-password
+  internal:
+    api-key: test-internal-key
+  mail:
+    from: test@example.invalid
+  razorpay:
+    key-id: rzp_test_placeholder
+    key-secret: test-secret
+    webhook-secret: test-webhook-secret

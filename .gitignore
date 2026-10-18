@@ -1,0 +1,82 @@
+﻿# Secrets and environment
+.env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+!**/.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Dependencies and build output
+**/node_modules/
+**/.next/
+**/target/
+**/dist/
+**/build/
+**/.turbo/
+
+# Local development
+.vscode/
+.idea/
+*.log
+*.tmp
+
+# Backups and reports
+backup/
+backups/
+reports/
+*-backup-*/
+*.backup
+*.backup.*
+*.stage*-backup
+*.stage*-backup.*
+*.bak
+
+# Local database dumps
+*.dump
+*.sql.gz
+
+# Generated documents and product uploads
+backend/data/
+backend/uploads/
+
+# Deployment archives and reports
+*.zip
+*.pdf
+*.txt
+*.log.*
+*.stderr
+*.stdout
+
+# Old source snapshots
+*.before-*
+*.step*-backup
+*.bak-*
+*.stage*-backup
+*.backup
+*.backup.*
+*-backup
+*-backup-*
+
+# Temporary development scripts
+backend/step*_runner.cmd
+backend/stage*_runner.cmd
+
+# Local test workspaces
+delhivery-proxy-test/
+
+# Historical Next.js build folders
+**/.next*/
+**/.next-*/
+
+# Additional generated artifacts
+**/*.rsc
+**/*.rscinfo
+**/*.pack
+**/*.meta
+
+# Local Next.js TypeScript build metadata
+**/*.tsbuildinfo
