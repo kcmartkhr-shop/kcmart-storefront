@@ -1,10 +1,10 @@
-spring:
+﻿spring:
   application:
     name: kcmart-backend
 
   datasource:
-    url: jdbc:postgresql://localhost:5433/kcmart
-    username: kcmart
+    url: ${KCMART_DB_URL:jdbc:postgresql://localhost:5433/kcmart}
+    username: ${KCMART_DB_USERNAME:kcmart}
     password: ${KCMART_DB_PASSWORD}
 
   jpa:
